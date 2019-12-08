@@ -7,7 +7,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Description>Easily resize and crop images, add text watermark, add text outline, add image watermark with transparency, etc. Supports all .NetStandard2.0 compatible platforms (Asp.Net Core all versions and more...)</Description>
     <Copyright>Ziyad.info</Copyright>
-    <PackageTags>asp.net,core,.net,dotnet,image,resize,text,overlay</PackageTags>
+    <PackageTags>asp.net,core,.net,dotnet,dotnetstandard,.netstandard,image,resize,crop,scale,text,outline,overlay,opacity</PackageTags>
     <RepositoryUrl>https://github.com/LazZiya/ImageResize</RepositoryUrl>
     <PackageProjectUrl>http://ziyad.info/en/articles/29-Image_Resize_for_dotNetCore</PackageProjectUrl>
     <Version>3.0.0-preview1</Version>
@@ -24,6 +24,7 @@
     </PackageReleaseNotes>
     <PackageIconUrl>https://raw.githubusercontent.com/LazZiya/ImageResize/master/LazZiya.ImageResize/files/icon.png</PackageIconUrl>
     <PackageIcon>icon.png</PackageIcon>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
