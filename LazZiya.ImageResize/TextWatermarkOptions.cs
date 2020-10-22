@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System.Collections.Generic;
+using System.Drawing;
 
 namespace LazZiya.ImageResize
 {
@@ -65,5 +66,7 @@ namespace LazZiya.ImageResize
         /// Text outline width in pixels. Default value 3.5f
         /// </summary>
         public float OutlineWidth { get; set; } = 3.5f;
+
+        public PointF Pos;
     }
 }

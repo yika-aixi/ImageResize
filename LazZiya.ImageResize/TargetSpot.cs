@@ -64,5 +64,7 @@
         /// Takes the bottom left area of the image
         /// </summary>
         BottomRight,
+        
+        Custom,
     }
 }

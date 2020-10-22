@@ -58,10 +58,18 @@ namespace LazZiya.ImageResize
                 var ff = new FontFamily(ops.FontName);
                 var font = new Font(ff, ops.FontSize, ops.FontStyle, GraphicsUnit.Pixel);
 
-                // Measure text size
-                var textMetrics = graphics.MeasureString(text, font, img.Width, sf);
-                var beforeText = TextWatermarkPosition.SetTextAlign(textMetrics, img.Width, ops.Location);
-                var drawPoint = new PointF(beforeText, bgPos.Y + (bgPos.Height / 4));
+                PointF drawPoint = new PointF();
+                
+                if (ops.Location != TargetSpot.Custom)
+                {
+                    // Measure text size
+                    var textMetrics = graphics.MeasureString(text, font, img.Width, sf);
+                    var beforeText = TextWatermarkPosition.SetTextAlign(textMetrics, img.Width, ops.Location);
+                    drawPoint = new PointF(beforeText, bgPos.Y + (bgPos.Height / 4));
+                }
+
+                drawPoint.X += ops.Pos.X;
+                drawPoint.Y += ops.Pos.Y;
 
                 var outlineBrush = new SolidBrush(ops.OutlineColor);
 
