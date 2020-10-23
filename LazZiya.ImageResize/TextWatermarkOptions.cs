@@ -67,6 +67,10 @@ namespace LazZiya.ImageResize
         /// </summary>
         public float OutlineWidth { get; set; } = 3.5f;
 
-        public PointF Pos;
+        public PointF Position { get; set; }
+
+        public Color ShadowColor { get; set; } = Color.FromArgb(0, Color.Black);
+        
+        public PointF ShadowOffset { get; set; }
     }
 }
